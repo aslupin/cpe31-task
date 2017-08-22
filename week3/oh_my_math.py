@@ -18,6 +18,10 @@ def my_exp(x):
 def my_pow(x,y):
     if(y == 0):return 1
     elif(y == 1):return x
+    elif(y < 0):
+        for i in range(y-1):
+            x *= x
+        return 1/x
     else:
         for i in range(y-1):
             x *= x
@@ -54,4 +58,4 @@ def my_pi():
     return 3.14159265359
 def my_e():
     return 2.71828
-print(my_sqrt(3))
+print(my_sqrt(4))
