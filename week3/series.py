@@ -10,7 +10,6 @@ def sum_a(n):
     sumsq=0
     for i in range(1,n+1):
         sumsq += a(i)
-        # print(str(i) +" " + st,end=" ")
     return sumsq
 def sum_b(n):
     # Code your sum_b(n) function here

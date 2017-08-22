@@ -6,7 +6,7 @@ def gettime(t):
     else:return process(t//5*3)
 def process(t):
     if t==0 :return 0
-    elif(t > 3): return (t//3)*((27*3-(3**4)/4)/10-0.075)
+    elif(t > 3):return (t//3)*((27*3-(3**4)/4)/10-0.075)
     else:return ((27*t-(t**4)/4)/10-0.075)
     
 t = int(input())
