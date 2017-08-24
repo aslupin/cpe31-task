@@ -5,7 +5,6 @@ def findpirmeBT(n):
             if(i != 1 and i != n):
                 return False
     return True
-
 ans = 0;ignorePair = list()
 n = int(input())
 for i in range(1,n+1):
