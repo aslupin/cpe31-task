@@ -20,4 +20,4 @@ for i in range(1,year+1):
     wbee.append( wbee[i-1] + sbee[i-1] + 1 )
     sbee.append( wbee[i-1] )
     killb(wbee,sbee,kill,i)
-print("{} {}".format(wbee.pop(),sbee.pop()))
+print("{}\n{}".format(wbee.pop(),sbee.pop()))

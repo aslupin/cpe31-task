@@ -11,8 +11,8 @@ while(True):
         break
     play = int(input())
     if(play > dice*6):break
-    if(play == randint(1,dice * 6)):
-        score = count_dic * (mon/mondy)
+    if(play == randint(dice,6*dice)):
+        score = count_dic * (10*count_dic/mondy)*100
         print("%.2f"%score)
         print(count_dic)
         print(mondy)
