@@ -9,3 +9,5 @@ for i in fly:
     if(x == here_x and y == here_y):check=True
 if(check):print('Y\n%d'%(here_x+here_y))
 else:print('N')
+
+print(x,y)
