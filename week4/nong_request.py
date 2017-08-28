@@ -1,13 +1,17 @@
 import random
 def attack(typee,hp,ber_chk):
-    if(random.randint(1,10) > 3):
-        damage = random.randint(350,450)
-        if(typee == 'me' and ber_chk): damage *= 2
-        hp -= damage
-        if(typee == 'me'):print("The monster loses %d hp"%damage)
-        else:print("The hero loses %d hp"%damage)
-    else:
-        if(typee == 'me'):print("You missed!")
+    if(typee == 'me'):
+        if(random.randint(1,10) > 3):
+            damage = random.randint(350,450)
+            if(ber_chk): damage *= 2
+            hp -= damage
+            print("The monster loses %d hp"%damage)
+        else:print("You missed!")
+    if(typee == 'mon'):
+        if(random.randint(1,10) > 2):
+            damage = random.randint(250,350)
+            hp -= damage
+            print("The hero loses %d hp"%damage)
         else:print("Monster missed!")
     return hp
 def defend():
