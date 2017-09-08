@@ -7,8 +7,7 @@ def nlove(love,n=0):
         if(i):n+=1
     return n
 
-lovena = list()
-for i in range(5):lovena.append(bfine(input().lower(),'somrak'))
+lovena = [bfine(input().lower(),'somrak') for i in range(5)]
 if(lovena[0] and lovena[1] and lovena[2]):print('Love Love Somsri\n"somrak" :: {} sentences'.format(nlove(lovena)))
 elif(lovena[1] and lovena[2] and lovena[3]):print('Love Love Somsri\n"somrak" :: {} sentences'.format(nlove(lovena)))
 elif(lovena[3] and lovena[4] and lovena[5]):print('Love Love Somsri\n"somrak" :: {} sentences'.format(nlove(lovena)))
