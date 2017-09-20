@@ -1,4 +1,2 @@
-a = 10
-y = 11
-x = a > y
-print(x)
+a = 'poon'*4
+print(a)

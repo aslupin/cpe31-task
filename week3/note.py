@@ -1,5 +1,3 @@
-a = 0
-while a<=10 :
-  a += 1
-  if condition():
-        break
+mat = [[1,2,3],['x','a','b']]
+
+print(mat[0][0],mat[0][1])

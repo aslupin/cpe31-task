@@ -12,26 +12,13 @@ while(True):
         wet.append(w)
 print(wet,ppl)
 for i in range(1,len(ppl)):
-    # print(i)
     while(True):
         count_wet += wet[i]
         ppl[i] -= 1
         count_ppl += 1
         if(count_wet + wet[i] > wet[0] or count_ppl == ppl[0] or (ppl[i] == 0 and i == len(ppl)-1)):
-            # print("{} {} {} {}".format(i,ans,count_wet,ppl[i]))
             ans += 1
             count_wet = 0
             count_ppl = 0
         if(ppl[i] == 0):break
 print(ans)
-
-
-        
-
-
-
-
-    
-
-
-
