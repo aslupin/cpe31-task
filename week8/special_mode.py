@@ -29,4 +29,4 @@ while(txt != 'end'):
     txt = input()
 if(ch_sp_mod(key,f)):
     pass
-else:print('Don’t have mode')
+else:print("Don't have mode")
